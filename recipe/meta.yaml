@@ -1,4 +1,4 @@
-{% set version = '1.0.8' %}
+{% set version = '1.0.9' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/iterators_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/iterators/iterators_{{ version }}.tar.gz
-  sha256: ae4ea23385776eb0c06c992a3da6b0256a6c84558c1061034c5a1fbdd43d05b8
+  sha256: de001e063805fdd124953b571ccb0ed2838c55e40cca2e9d283d8a90b0645e9b
 
 
   # patches:
@@ -21,7 +21,7 @@ source:
 
 build:
   # If this is a new build for the same version, increment the build number.
-  number: 4
+  number: 0
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -66,7 +66,7 @@ extra:
 # Package: iterators
 # Type: Package
 # Title: Provides Iterator Construct for R
-# Version: 1.0.8
+# Version: 1.0.9
 # Authors@R: c(person("Rich", "Calaway", role="cre", email="richcala@microsoft.com"), person("Revolution", "Analytics", role=c("aut", "cph")), person("Steve", "Weston", role="aut"))
 # Description: Support for iterators, which allow a programmer to traverse through all the elements of a vector, list, or other collection of data.
 # Depends: R (>= 2.5.0), utils
@@ -76,11 +76,11 @@ extra:
 # Maintainer: Rich Calaway <richcala@microsoft.com>
 # Repository: CRAN
 # Repository/R-Forge/Project: foreach
-# Repository/R-Forge/Revision: 27
-# Repository/R-Forge/DateTimeStamp: 2015-10-12 01:37:31
-# Date/Publication: 2015-10-13 09:12:54
+# Repository/R-Forge/Revision: 31
+# Repository/R-Forge/DateTimeStamp: 2017-12-08 23:08:19
+# Date/Publication: 2017-12-12 15:26:15 UTC
 # NeedsCompilation: no
-# Packaged: 2015-10-12 02:25:27 UTC; rforge
+# Packaged: 2017-12-08 23:33:40 UTC; rforge
 
 # See
 # http://docs.continuum.io/conda/build.html for

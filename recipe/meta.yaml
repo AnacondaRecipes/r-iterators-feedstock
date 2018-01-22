@@ -10,8 +10,8 @@ package:
 source:
   fn: iterators_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/iterators_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/iterators/iterators_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/iterators_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/iterators/iterators_{{ version }}.tar.gz
   sha256: de001e063805fdd124953b571ccb0ed2838c55e40cca2e9d283d8a90b0645e9b
 
 

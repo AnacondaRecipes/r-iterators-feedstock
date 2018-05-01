@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/iterators/iterators_{{ version }}.tar.gz
   sha256: de001e063805fdd124953b571ccb0ed2838c55e40cca2e9d283d8a90b0645e9b
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
